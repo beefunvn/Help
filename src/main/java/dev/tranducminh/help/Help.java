@@ -22,7 +22,7 @@ public class Help extends JavaPlugin implements Listener {
         Bukkit.getServer().getPluginManager().registerEvents(this, this);
         getCommand("help").setExecutor((sender, command, label, args) -> {
             if (!(sender instanceof Player)) {
-                sender.sendMessage(ChatColor.RED + "Lệnh này chỉ dành cho người chơi.");
+                sender.sendMessage(ChatColor.RED + "This command is for players only.");
                 return true;
             }
             Player player = (Player) sender;
